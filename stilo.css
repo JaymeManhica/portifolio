@@ -4,6 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 
+img{
+    width: 30%;
+    
+}
+.grid{
+    display: grid;
+    
+    gap: 10px;
+    border-radius: 10px;
+}
 
 :root{
     --fonte1: 'Alkatra', cursive;
@@ -22,7 +32,7 @@
 
 
 body,html{
-    background-color: #e9c9bb21;
+    background-color: #e9c9bbf6;
     min-height: 100vh;
     font-family: var(--fonte1);
 }
@@ -38,9 +48,9 @@ header{
     
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
     text-align: center;
-    max-width: 95%;
-    min-height: 30%;
+    height: 190px;
     margin: auto;
+    
 
 }
 header > h1{
@@ -63,11 +73,14 @@ header >p{
 
 }
 nav{
+    max-width: 100%;
+    min-height: 150;
     background-color: var(--cor1);
     padding: 10px;
     display: flex;
     justify-content:space-evenly;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.562);
+    border-radius: 0px 0px 10px 10px;
 }
 nav > a{
     color: white;
@@ -81,5 +94,93 @@ nav > a:hover {
     border-radius: 20px;
     color: #472A22;
 
-
 }
+main{
+    background-color: white;
+    max-width: 85%;
+    min-height: 30%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin-bottom:30px ;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px ;
+    
+}
+main > p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main a{
+text-decoration: none;
+font-weight: bold;
+color: var(--cor6);
+padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor0);
+    border-radius: 10px;
+    
+}
+aside{
+    background-color: var(--cor6);
+    border-radius: 10px;
+    
+    padding: 10px;
+}
+aside > h3{
+    background-color: #1e110b;
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul{
+    list-style-type: \2714\00A0 ;
+    list-style-position: inside;
+    columns: 2;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    padding: 2px 6px;
+}
+a:hover{
+    text-decoration: underline;
+    color: var(--cor0);
+    border-radius: 10px;}
+
+    section.imagem {
+        background-size: cover;
+        height: 50vh;
+        background-attachment: fixed;
+
+    }
+    section.imagem > p{
+        display: inline-block;
+        background-color:#1e110ba1;
+         padding: 5px;
+         text-shadow: 1px 1px 0px black;
+         color: white;
+        text-align: center;
+    }
+
+    section#img2{
+        background-image: url('imagem/tigre.jpg');
+        background-position: right center;
+    }
+    section#img1 {
+        background-image: url('imagem/DSC_0004.JPG');
+        background-position: top right ;
+    }
+
+    
+        
